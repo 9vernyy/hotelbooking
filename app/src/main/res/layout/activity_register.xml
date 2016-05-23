@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    custom:context=".activity.RegisterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hotel Booking"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="48sp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_singleLineEllipsis="true"
+            app:met_floatingLabel="normal"
+            app:met_baseColor="#080808"
+            app:met_primaryColor="#060b9c"
+            app:met_errorColor="#ff020a"
+            android:hint="First name"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_singleLineEllipsis="true"
+            app:met_floatingLabel="normal"
+            app:met_baseColor="#080808"
+            app:met_primaryColor="#060b9c"
+            app:met_errorColor="#ff020a"
+            android:hint="Last name"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_singleLineEllipsis="true"
+            app:met_floatingLabel="normal"
+            app:met_baseColor="#080808"
+            app:met_primaryColor="#060b9c"
+            app:met_errorColor="#ff020a"
+            android:inputType="textEmailAddress"
+            android:hint="Email"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_singleLineEllipsis="true"
+            app:met_floatingLabel="normal"
+            app:met_baseColor="#080808"
+            app:met_primaryColor="#060b9c"
+            android:inputType="textPassword"
+            app:met_errorColor="#ff020a"
+            android:hint="Password"/>
+
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Sign up"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <!-- Link to Login Screen -->
+
+        <Button
+            android:id="@+id/btnLinkToLoginScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:text="Already registred! Login Me."
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</LinearLayout>
